@@ -1,6 +1,6 @@
 
 const loadNews = async()=>{
-    const url = `https://openapi.programming-hero.com/api/news/category/01`
+    const url = `https://openapi.programming-hero.com/api/news/category/04`
     const res = await fetch(url);
     const data = await res.json();
     displayNews(data.data)
@@ -16,8 +16,8 @@ const displayNews = (news) =>{
         const newsDiv = document.createElement('div');
         newsDiv.classList.add('row');
         newsDiv.innerHTML = `
-
-         <div class="col-md-4">
+          <div class="card ">
+         <div class=" col-md-4">
         <img src="${newses.thumbnail_url}" class="img-fluid rounded-1" alt="...">
       </div>
       <div class="col-md-8">
@@ -39,6 +39,7 @@ const displayNews = (news) =>{
                     </div>
             </div>
         </div>
+      </div>
       </div>
         `;
         newsContainer.appendChild(newsDiv);
