@@ -1,7 +1,6 @@
 
 const loadNews = async()=>{
-
-    const url = `https://openapi.programming-hero.com/api/news/categories`
+    const url = `https://openapi.programming-hero.com/api/news/category/01`
     const res = await fetch(url);
     const data = await res.json();
     displayNews(data.data)
@@ -15,14 +14,15 @@ const displayNews = (news) =>{
 
      news.forEach(newses =>{
         const newsDiv = document.createElement('div');
-        newsDiv.classList.add('col');
+        newsDiv.classList.add('row');
         newsDiv.innerHTML = `
-        <div class="col-md-4">
+
+         <div class="col-md-4">
         <img src="${newses.thumbnail_url}" class="img-fluid rounded-1" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title text-primary fs-4">${newses.title}</h5>
+          <h5 class="card-title text-primary fs-5">${newses.title}</h5>
           <p class="card-text text-truncate">${newses.details}</p>
 
             <div class="card-text d-flex justify-content-between m-3">
