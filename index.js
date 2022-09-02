@@ -17,15 +17,15 @@ const displayNews = (news) =>{
 
         newsDiv.classList.add('row');
         newsDiv.innerHTML = `
-        <div class="card mb-3" style="max-width: 100;">
+        <div class="card " style="max-width: 100;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="${newses.thumbnail_url}" class="img-fluid rounded-start" alt="...">
+            <img src="${newses.thumbnail_url}" class="img-fluid rounded" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title fs-4 text-primary">${newses.title}</h5>
-              <p class="card-text text-gray-900 text-wrap ext-break fw-semibold text-truncate">${newses.details}</p>
+              <p class="card-text text-gray-900  text-break text-wrap fw-semibold text-truncate">${newses.details}</p>
 
               <div class="card-text d-flex justify-content-between ">
 
