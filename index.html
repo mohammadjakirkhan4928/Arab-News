@@ -6,12 +6,12 @@
     <title>Arab News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
-  
+
   <body class="bg-dark">
 
       <header class="container">
          <section>
-            <nav class="navbar navbar-expand-lg bg-#fff ">
+            <nav class="navbar navbar-expand-lg  ">
                 <div class="container-fluid justify-content-evenly">
                   <a class="navbar-brand badge bg-primary fs-3 fw-bold" href="#">Arab News</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
          </section>
             <hr>
          <section>
-            <nav class="navbar bg-#fff">
+            <nav class="navbar">
                 <form class="container-fluid justify-content-evenly">
 
                   <button class="btn btn-outline-success me-2" type="button">Home</button>
@@ -47,14 +47,44 @@
          </section>
       </header>
 
-      <main>
+      <main class="container mt-5">
+
+        <section>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fs-4">Card title</h5>
+                      <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
+
+                      <p class="card-text text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore, pariatur, ipsa eos corrupti eveniet, dolores dignissimos cum consequatur debitis ad optio veniam? Repellat illum eveniet, tempore omnis sit porro!</p>
+
+                        <div class="card-text d-flex justify-content-between m-3">
+                                <div class="d-flex">
+                                    <img src="" class="img-fluid rounded-start" alt="">
+                                    <p class="fs-5 fw-bold">jakir</p>
+                                </div>
+                                <div>
+                                    <small class="fs-5 fw-bold">1.5M</small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary fs-5 fw-bold">CLick</button>
+                                </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+      </main>
 
        <footer class=" m-5 bg-primary">
            <p class="fs-3 fw-bold text-light text-center py-5 ">&copy; Arab News</p>
        </footer>
-
-      </main>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="app.js"></script>
